@@ -1,0 +1,163 @@
+/* Styles généraux */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+/* Styles de la barre de navigation */
+.navbar-brand {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Styles des cartes */
+.card {
+    border-radius: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.login-card {
+    max-width: 450px;
+    border-radius: 15px;
+}
+
+/* Styles des tableaux */
+.table th {
+    font-weight: 600;
+    color: #495057;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+/* Styles des badges */
+.badge {
+    padding: 6px 10px;
+    font-weight: 500;
+    border-radius: 6px;
+}
+
+/* Styles des boutons */
+.btn {
+    border-radius: 6px;
+    font-weight: 500;
+    padding: 8px 16px;
+}
+
+.btn-sm {
+    padding: 4px 8px;
+}
+
+.btn-group .btn {
+    border-radius: 4px;
+    margin: 0 2px;
+}
+
+/* Styles des formulaires */
+.form-control, .form-select {
+    border-radius: 6px;
+    padding: 10px 15px;
+    border: 1px solid #ced4da;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Styles spécifiques pour les comptes */
+.account-info p {
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #e9ecef;
+    padding-bottom: 10px;
+}
+
+.account-info p:last-child {
+    border-bottom: none;
+}
+
+.account-stats p {
+    margin-bottom: 10px;
+}
+
+/* Styles pour les transactions */
+.transaction-rules p {
+    color: #6c757d;
+}
+
+/* Animation pour les alertes */
+.alert {
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Styles pour les montants */
+.text-success {
+    color: #28a745 !important;
+}
+
+.text-danger {
+    color: #dc3545 !important;
+}
+
+/* Styles pour les statuts */
+.bg-success {
+    background-color: #28a745 !important;
+}
+
+.bg-warning {
+    background-color: #ffc107 !important;
+}
+
+.bg-danger {
+    background-color: #dc3545 !important;
+}
+
+.bg-info {
+    background-color: #17a2b8 !important;
+}
+
+.bg-secondary {
+    background-color: #6c757d !important;
+}
+
+/* Styles pour les pages de détail */
+.page-header {
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* Styles pour les résumés de transaction */
+#transactionSummary {
+    transition: all 0.3s ease;
+}
+
+/* Styles pour les écrans mobiles */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 20px;
+    }
+    
+    .btn-group .btn {
+        padding: 4px 6px;
+    }
+    
+    .table {
+        font-size: 0.9rem;
+    }
+}
